@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px; /* Increased padding */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px; /* Increased width */
+}
+p{
+    margin-top: 10px;
+    font-family: MyCustomFont3;
+    font-size: 20px;
+    justify-content: center;
+}
+a{
+    font-family: MyCustomFont3;
+    font-size: 20px;
+
+}
+.login-box h2 {
+    text-align: center;
+    font-size: 28px; /* Slightly larger text */
+    margin-bottom: 20px;
+    color: black;
+    font-style: italic;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 12px; /* Increased padding */
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding-left: 10px;
+    font-size: 18px; /* Increased font size */
+}
+label{
+	width: 100%;
+	color: grey;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding-left: 10px;
+    font-size: 18px;
+}
+select {
+  width: 1000px;
+  height:30px; 
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5); 
+  color:grey;/* Adjust the width as needed */
+}
+
+
+.input-box i {
+    font-size: 20px;
+}
+@font-face {
+    font-family: 'MyCustomFont3';
+    src: url('fonts/Bellefair/Bellefair-Regular.ttf') format('truetype'); /* Adjust path */
+}
+
+.login-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px; /* Bigger button text */
+    text-align: center;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: darkblue;
+}
+@font-face {
+    font-family: 'MyCustomFont1';
+    src: url('fonts/BrittanySignature.ttf') format('truetype'); /* Adjust path */
+} 

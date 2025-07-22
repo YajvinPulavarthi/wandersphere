@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>All Packages</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(to right, #d3cce3, #e9e4f0);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .package-container {
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            transition: transform 0.2s ease;
+        }
+
+        .package-container:hover {
+            transform: scale(1.01);
+        }
+
+        .package-detail {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .modify-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #2980b9;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .modify-button:hover {
+            background-color: #1abc9c;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Available Packages</h1>
+
+<?php
+$servername = "localhost";
+$username = "root"; // use your DB username
+$password = "";     // use your DB password
+$dbname = "wandersphere";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("<p style='text-align:center; color:red;'>Connection failed: " . $conn->connect_error . "</p>");
+}
+
+$sql = "SELECT * FROM package";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        echo "<div class='package-container'>";
+        echo "<div class='package-detail'><strong>Package ID:</strong> " . $row["package_id"] . "</div>";
+        echo "<div class='package-detail'><strong>Source:</strong> " . $row["source"] . "</div>";
+        echo "<div class='package-detail'><strong>Destination:</strong> " . $row["destination"] . "</div>";
+        echo "<div class='package-detail'><strong>Start Date:</strong> " . $row["start_date"] . "</div>";
+        echo "<div class='package-detail'><strong>End Date:</strong> " . $row["end_date"] . "</div>";
+        echo "<a class='modify-button' href='modify_package.php?package_id=" . $row["package_id"] . "'>Modify</a>";
+        echo "</div>";
+    }
+} else {
+    echo "<p style='text-align:center;'>No packages found.</p>";
+}
+
+$conn->close();
+?>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Successful</title>
+  <style>
+    @font-face {
+      font-family: 'MyCustomFont1';
+      src: url('fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'MyCustomFont2';
+      src: url('fonts/norwester.otf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'MyCustomFont3';
+      src: url('fonts/TT Drugs Trial Light.otf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'MyCustomFont4';
+      src: url('fonts/Lora/Lora-VariableFont_wght.ttf') format('truetype');
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: url('fe.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 80px auto;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1 {
+      color: #000000;
+      font-size: 2.5em;
+      font-family: 'MyCustomFont1';
+    }
+
+    h3 {
+      font-family: 'MyCustomFont2';
+    }
+
+    .feedback {
+      margin-top: 40px;
+      text-align: left;
+    }
+
+    .feedback textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 1em;
+    }
+
+    .feedback button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: 'MyCustomFont4';
+    }
+
+    .footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    p {
+      font-family: 'MyCustomFont3';
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Payment Successful!</h1>
+    <p>Thank you for your purchase. We will contact you through your email shortly.</p>
+
+    <div class="feedback">
+      <h3>We'd love your feedback:</h3>
+      <textarea placeholder="Share your experience..."></textarea><br>
+      <button>Submit Feedback</button>
+    </div>
+
+    <div class="footer">
+      <p><strong>WanderSphere Pvt. Ltd.</strong></p>
+      <p>Room no:101 Hostel A, PTU</p>
+      <p>Contact: 9493895972 | Email: support@twandersphere.com</p>
+    </div>
+  </div>
+
+</body>
+</html>

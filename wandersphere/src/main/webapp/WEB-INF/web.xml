@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" 
+         id="WebApp_ID" 
+         version="4.0">
+
+  <display-name>wandersphere</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+
+  <!-- Signup Servlet -->
+  <servlet>
+    <servlet-name>SignupServlet1</servlet-name>
+    <servlet-class>com.wandersphere.servlet.SignupServlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignupServlet1</servlet-name>
+    <url-pattern>/SignupServlet1</url-pattern>
+  </servlet-mapping>
+
+  <!-- Login Servlet -->
+  <servlet>
+    <servlet-name>LoginServlet1</servlet-name>
+    <servlet-class>com.wandersphere.servlet.LoginServlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet1</servlet-name>
+    <url-pattern>/LoginServlet1</url-pattern>
+  </servlet-mapping>
+
+  <!-- Visit Counter Servlet -->
+  <servlet>
+    <servlet-name>VisitCounterServlet</servlet-name>
+    <servlet-class>com.wandersphere.visitorcounter.VisitCounterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VisitCounterServlet</servlet-name>
+    <url-pattern>/VisitCounterServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Search Servlet -->
+  <servlet>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>com.wandersphere.servlet.SearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/SearchServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add User Servlet -->
+  <servlet>
+    <servlet-name>AddUserServlet</servlet-name>
+    <servlet-class>com.wandersphere.servlet.AddUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddUserServlet</servlet-name>
+    <url-pattern>/addUser</url-pattern>
+  </servlet-mapping>
+
+  <!-- Update User Servlet -->
+  <servlet>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <servlet-class>com.wandersphere.servlet.UpdateUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <url-pattern>/updateUser</url-pattern>
+  </servlet-mapping>
+
+</web-app>

@@ -1,0 +1,145 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    height: 100vh;
+    background: url('backdash.jpg') no-repeat center center;
+    background-size: cover; /* Ensures full coverage */
+    background-attachment: fixed; /* Prevents scroll issue */
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'MyCustomFont1';
+    src: url('fonts/SixCaps-Regular.ttf') format('truetype'); /* Adjust path */
+} 
+@font-face {
+    font-family: 'MyCustomFont4';
+    src: url('fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype'); /* Adjust path */
+} 
+@font-face {
+    font-family: 'MyCustomFont5';
+    src: url('fonts/Smythe/Smythe-Regular.ttf') format('truetype'); /* Adjust path */
+} 
+@font-face {
+    font-family: 'MyCustomFont2';
+    src: url('fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf') format('truetype'); /* Adjust path */
+}
+@font-face {
+    font-family: 'MyCustomFont3';
+    src: url('fonts/Bellefair/Bellefair-Regular.ttf') format('truetype'); /* Adjust path */
+}
+
+/* Main Heading */
+.p1 {
+    text-align: center;
+    color: rgb(241, 235, 235);
+    font-family: 'MyCustomFont1';
+    font-size: 150px;
+    margin-bottom: 10px;
+}
+
+/* Subheading */
+.p2 {
+    text-align: center;
+    font-family: 'MyCustomFont4';
+    color: white;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+/* Button Styling */
+button {
+    font-size: 25px;
+    font-family: 'MyCustomFont5';
+    background: rgba(255, 255, 255, 0.197);
+    border: 2px solid white;
+    padding: 20px 30px;
+    margin: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+a {
+    color: rgb(14, 13, 14); /* Change this */
+    text-decoration: none;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation */
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Centering Text */
+.p3 {
+    text-align: center;
+    color: rgb(248, 248, 248);
+    font-family: 'MyCustomFont2';
+    font-size: 45px;
+    margin-top: -130px;
+    position: relative;
+    top: -20px;
+}
+
+/* ✅ FIXED Social Icons Alignment */
+.social {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    display: flex;
+    gap: 15px; /* Space between icons */
+    align-items: center; /* Ensure vertical alignment */
+}
+
+/* Ensures icons are properly spaced */
+.social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Social Icons Styling */
+.social-img {
+    width: 35px; /* Uniform size */
+    height: 35px;
+    object-fit: contain; /* Maintain aspect ratio */
+    transition: transform 0.3s ease-in-out;
+}
+
+.social a:hover .social-img {
+    transform: scale(1.2);
+}
+
+/* Mobile Responsive Fix */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* Fix for mobile browsers */
+    }
+
+    .p1 {
+        font-size: 80px; /* Smaller text for mobile */
+    }
+
+    .p2 {
+        font-size: 30px;
+    }
+
+    .social {
+        bottom: 10px; /* Adjust position for small screens */
+        right: 10px;
+    }
+
+    .social-img {
+        width: 30px;
+        height: 30px;
+    }
+}

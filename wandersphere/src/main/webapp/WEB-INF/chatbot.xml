@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chatbot>
+    <qa>
+        <question>What are the available travel packages?</question>
+        <answer>We offer a variety of packages for destinations like Manali, Goa, Munnar, and Coorg. Check out our "Packages" section for more details.</answer>
+    </qa>
+    <qa>
+        <question>How can I book a travel package?</question>
+        <answer>Login and select a destination, then click on 'Book Package' to proceed with your booking.</answer>
+    </qa>
+    <qa>
+        <question>Can I cancel my travel booking?</question>
+        <answer>Yes, go to 'My Bookings' and select the package you want to cancel. You may also reach out to our support for assistance.</answer>
+    </qa>
+    <qa>
+        <question>Is Wandersphere available for booking 24/7?</question>
+        <answer>Yes, our website is open 24/7 for bookings. Our customer support is available during working hours.</answer>
+    </qa>
+    <qa>
+        <question>How do I contact customer support?</question>
+        <answer>You can email us at support@pawfectpets.com or call our helpline at +91-XXXXXXXXXX.</answer>
+    </qa>
+</chatbot>
